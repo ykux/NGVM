@@ -1,0 +1,142 @@
+/*
+  Icon Font: font-travel
+*/
+
+@font-face {
+  font-family: "font-travel";
+  src: url("../fonts/font-travel.eot");
+  src: url("../fonts/font-travel.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/font-travel.woff") format("woff"),
+       url("../fonts/font-travel.ttf") format("truetype"),
+       url("../fonts/font-travel.svg#font-travel") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.ft-add:before,
+.ft-alert:before,
+.ft-alternative-flight:before,
+.ft-attraction:before,
+.ft-book-hotel:before,
+.ft-bus:before,
+.ft-calendar:before,
+.ft-call:before,
+.ft-car:before,
+.ft-chevron-right:before,
+.ft-combine:before,
+.ft-contact-provider:before,
+.ft-converters:before,
+.ft-cruise:before,
+.ft-currency:before,
+.ft-delete:before,
+.ft-dining:before,
+.ft-directions:before,
+.ft-document:before,
+.ft-edit:before,
+.ft-expenses:before,
+.ft-ferry:before,
+.ft-flight-alert:before,
+.ft-flight:before,
+.ft-import:before,
+.ft-information:before,
+.ft-insurance:before,
+.ft-itinerary:before,
+.ft-link:before,
+.ft-linked-booking:before,
+.ft-locked:before,
+.ft-lodging:before,
+.ft-logout:before,
+.ft-map:before,
+.ft-meeting:before,
+.ft-menu:before,
+.ft-message-icon:before,
+.ft-message:before,
+.ft-more:before,
+.ft-my-trips:before,
+.ft-passport:before,
+.ft-past-trips:before,
+.ft-print:before,
+.ft-profile:before,
+.ft-rail:before,
+.ft-refresh:before,
+.ft-sabre:before,
+.ft-search:before,
+.ft-seat-map:before,
+.ft-settings:before,
+.ft-share:before,
+.ft-show:before,
+.ft-tools:before,
+.ft-trip-feed:before,
+.ft-view-trip:before,
+.ft-weather:before {
+  display: inline-block;
+  font-family: "font-travel";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ft-add:before { content: "\f100"; }
+.ft-alert:before { content: "\f101"; }
+.ft-alternative-flight:before { content: "\f102"; }
+.ft-attraction:before { content: "\f103"; }
+.ft-book-hotel:before { content: "\f104"; }
+.ft-bus:before { content: "\f105"; }
+.ft-calendar:before { content: "\f106"; }
+.ft-call:before { content: "\f107"; }
+.ft-car:before { content: "\f108"; }
+.ft-chevron-right:before { content: "\f109"; }
+.ft-combine:before { content: "\f10a"; }
+.ft-contact-provider:before { content: "\f10b"; }
+.ft-converters:before { content: "\f10c"; }
+.ft-cruise:before { content: "\f10d"; }
+.ft-currency:before { content: "\f10e"; }
+.ft-delete:before { content: "\f10f"; }
+.ft-dining:before { content: "\f110"; }
+.ft-directions:before { content: "\f111"; }
+.ft-document:before { content: "\f112"; }
+.ft-edit:before { content: "\f113"; }
+.ft-expenses:before { content: "\f114"; }
+.ft-ferry:before { content: "\f115"; }
+.ft-flight-alert:before { content: "\f116"; }
+.ft-flight:before { content: "\f117"; }
+.ft-import:before { content: "\f118"; }
+.ft-information:before { content: "\f119"; }
+.ft-insurance:before { content: "\f11a"; }
+.ft-itinerary:before { content: "\f11b"; }
+.ft-link:before { content: "\f11c"; }
+.ft-linked-booking:before { content: "\f11d"; }
+.ft-locked:before { content: "\f11e"; }
+.ft-lodging:before { content: "\f11f"; }
+.ft-logout:before { content: "\f120"; }
+.ft-map:before { content: "\f121"; }
+.ft-meeting:before { content: "\f122"; }
+.ft-menu:before { content: "\f123"; }
+.ft-message-icon:before { content: "\f124"; }
+.ft-message:before { content: "\f125"; }
+.ft-more:before { content: "\f126"; }
+.ft-my-trips:before { content: "\f127"; }
+.ft-passport:before { content: "\f128"; }
+.ft-past-trips:before { content: "\f129"; }
+.ft-print:before { content: "\f12a"; }
+.ft-profile:before { content: "\f12b"; }
+.ft-rail:before { content: "\f12c"; }
+.ft-refresh:before { content: "\f12d"; }
+.ft-sabre:before { content: "\f12e"; }
+.ft-search:before { content: "\f12f"; }
+.ft-seat-map:before { content: "\f130"; }
+.ft-settings:before { content: "\f131"; }
+.ft-share:before { content: "\f132"; }
+.ft-show:before { content: "\f133"; }
+.ft-tools:before { content: "\f134"; }
+.ft-trip-feed:before { content: "\f135"; }
+.ft-view-trip:before { content: "\f136"; }
+.ft-weather:before { content: "\f137"; }

@@ -1,0 +1,315 @@
+// min 5inch smart phones
+// 640 x 360 landscape
+
+// 7inch
+// 960 x 600 pixel ratio 2 landscape
+
+// 10inch high-res tablet
+// 1280 x 800 pixel ratio 2 landscape
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+
+body {
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%; // font-size 1em = 10px
+}
+.app {
+  background-color: #000000;
+}
+.dn-response-line .dn-line {
+  font-size: 1.6em;
+  font-weight: 300;
+  padding: 0 5px 0 10px;
+}
+
+.action-bar {
+  background: #e50000;
+  border-bottom: 4px solid #b70000;
+}
+.action-bar-title {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  height: 64px;
+  text-align: center;
+}
+.sabre-logo {
+  margin: 0 auto;
+  padding: 0;
+  width: 104px;
+  height: 64px;
+  display: block;
+  background: url(../images/ngv-sprite.png) no-repeat 0 0;
+}
+.dn-response-line .dn-line-group {
+  border-bottom: 1px dashed #555;
+}
+.dn-response-row .dn-line-group {
+  padding: 4px 0;
+}
+
+// Sass test with WebStorm
+
+// Media Queries
+$screen: "only screen" !default;
+
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+$small-up: $screen !default;
+
+@media #{$small-up} {
+  .ap {
+    display: none;
+  }
+}
+/*
+.command-line>table td.mask-cell,
+ .command-line>table td.mask-cell .mask {
+  font-size: 14px;
+  font-family: "Source Code Pro", Consolas, monospace;
+}
+.command-line>table td.mask-cell input.command-line-input,
+.command-line>table td.mask-cell input.form-control.command-line-input {
+  font-size: 14px;
+}
+*/
+
+
+// Styles from style.css
+.command-line {
+  background: #494949;
+}
+
+.ui-box-group-title {
+  font-size: 1.6em;
+}
+.ui-box-text-small {
+  font-size: 1em;
+  color: #6c6c6c;
+}
+.ui-box-text-small-plus {
+  font-size: 1.1em;
+  color: #6c6c6c;
+}
+.ui-box-text-mid {
+  font-size: 1.3em;
+  color: #2c2c2c;
+}
+.ui-box-text-big {
+  font-size: 1.6em;
+  color: #2c2c2c;
+}
+.ui-box-text-very-big {
+  font-size: 2.2em;
+  color: #2c2c2c;
+}
+
+
+/*===========================================*/
+/*==========  Mobile First Method  ==========*/
+/*===========================================*/
+
+
+// max-width 640px, mobile-only styles, use when QAing mobile issues
+@media only screen and (max-width: 40em) {
+  body {
+
+  }
+  .dn-request-line:after {
+    content:" max-width 640px ";
+  }
+
+  .sabre-logo {
+    margin: 0 auto;
+    padding: 0;
+    width: 78px;
+    height: 48px;
+    display: block;
+    background: url(../images/ngv-sprite.png) no-repeat -104px 0;
+  }
+
+  .app {
+    top: 48px;
+  }
+  .action-bar {
+    height: 48px;
+  }
+
+  .dn-response-line .dn-line {
+    font-size: 1.4em;
+  }
+
+  .areaout {
+    right: 0 !important;
+  }
+  .sidepanel--shown {
+    right: -400px;
+  }
+}
+
+// min-width 640px, medium screens
+@media only screen and (min-width: 40.063em) {
+  .dn-request-line:after {
+    content:" from 641px ";
+  }
+
+  .dn-response-line .dn-line,
+  .dn-request-line {
+    font-size: 1.6em;
+  }
+
+  .app {
+    top: 56px;
+  }
+  .action-bar {
+    height: 56px;
+  }
+
+  .command-line>table td.trip-builder-cell input[type="button"],
+  .area-indicator-cell .area-indicator,
+  .command-line>table td.mask-cell input.command-line-input,
+  .command-line>table td.history-cell input[type="button"],
+  .command-line>table td.send-button-cell input[type="button"],
+  .command-line>table td.opt-cell.l input[type="button"],
+  .command-line>table td.opt-cell input[type="button"],
+  .command-line>table td.opt-cell.r input[type="button"] {
+    line-height: normal;
+    height: 40px;
+    max-height: 40px;
+    border: none;
+  }
+  .area-indicator-cell .area-indicator {
+    line-height: 40px;
+  }
+  .command-line>table td.mask-cell input.command-line-input {
+    font-size: 1.6em;
+  }
+}
+
+// min-width 736px - iPhone Plus 736px x 414px
+@media only screen and (min-width: 46.0625em) {
+  .app {
+
+  }
+  .dn-request-line:after {
+    content:" 737px ";
+  }
+
+}
+
+// min-width 1025px, large screens
+@media only screen and (min-width: 64.0625em) {
+  .app {
+    background: #000000;
+  }
+  .dn-request-line:after {
+    content:" min-width 1025px ";
+  }
+
+  .app {
+    top: 64px;
+  }
+  .action-bar {
+    background: #e50000;
+    height: 64px;
+  }
+
+  .sidepanel--shown {
+    right: 0;
+  }
+}
+
+// min-width 1280px, large screens (10inch tablets)
+@media only screen and (min-width: 80em) {
+  body {
+    font-size: 75%; // font-size 1em = 12px
+  }
+}
+
+// min-width 1441px, xlarge screens
+@media only screen and (min-width: 90.0625em) {
+  body {
+    font-size: 87.5%; // font-size 1em = 14px
+  }
+
+  .app {
+    background: #333333;
+  }
+  .dn-request-line:after {
+    content:" min-width 1441px ";
+  }
+}
+
+// min-width 1921px, xxlarge screens
+@media only screen and (min-width: 120.0625em) {
+
+  .app {
+    background: #666666;
+  }
+
+  .dn-request-line:after {
+    content:" min-width 1921px ";
+  }
+}
+
+
+/*===========================================*/
+/*==========  Mobile Media query   ==========*/
+/*===========================================*/
+
+// MDPI CSS
+@media  (-webkit-min-device-pixel-ratio: 1) {
+  .dn-request-line:before {
+    content:" 160dpi ";
+  }
+}
+// HDPI CSS
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 240dpi) {
+  .app {
+  }
+  .dn-request-line:before {
+    content:" 240dpi ";
+  }
+}
+// XHDPI CSS / RETINA CSS
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 320dpi) {
+  .app {
+  }
+  .dn-request-line:before {
+    content:" 320dpi ";
+  }
+
+  .sabre-logo {
+    /* Reference the @2x Sprite */
+    background-image: url(../images/ngv-sprite@2x.png);
+    /* Translate the @2x sprite's dimensions back to 1x */
+    background-size: 400px 400px;
+  }
+}
+// XXHDPI CSS - Samsung Galaxy S5 / iPhone 6 Plus
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 480dpi) {
+  .app {
+  }
+  .dn-request-line:before {
+    content:" 480dpi ";
+  }
+}
+
+/*===========================================*/
+/*======  Disregard low and highest    ======*/
+/*===========================================*/
+
+// LDPI CSS
+@media (-webkit-min-device-pixel-ratio: 0.75), (min-resolution: 120dpi) {
+
+}
+
+// TVDPI CSS
+@media (-webkit-min-device-pixel-ratio: 1.33), (min-resolution: 213dpi) {
+
+}
+
+// XXXHDPI CSS
+@media (-webkit-min-device-pixel-ratio: 4), (min-resolution: 640dpi) {
+
+}

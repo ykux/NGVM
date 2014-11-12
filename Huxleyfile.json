@@ -1,0 +1,16 @@
+[
+  {
+    "name": "type-v",
+    "screenSize": [800, 1280],
+    "url": "http://localhost:8000/index.html"
+  },
+  {
+    "name": "type",
+    "screenSize": [1280, 800],
+    "url": "http://localhost:8000/index.html"
+  },
+  {
+    "name": "toggle button",
+    "url": "http://localhost:8000/test_page.html"
+  }
+]
