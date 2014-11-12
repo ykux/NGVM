@@ -1,16 +1,17 @@
 [
   {
-    "name": "type-v",
-    "screenSize": [800, 1280],
+    "name": "tablet10",
+    "screenSize": [1280, 960],
     "url": "http://localhost:8000/index.html"
   },
   {
-    "name": "type",
-    "screenSize": [1280, 800],
+    "name": "tablet7",
+    "screenSize": [960, 600],
     "url": "http://localhost:8000/index.html"
   },
   {
-    "name": "toggle button",
-    "url": "http://localhost:8000/test_page.html"
+    "name": "smartphone5",
+    "screenSize": [640, 360],
+    "url": "http://localhost:8000/index.html"
   }
 ]
