@@ -130,6 +130,7 @@ $small-up: $screen !default;
 
   .app {
     top: 48px;
+    background-color: #008000;
   }
   .action-bar {
     height: 48px;
@@ -147,8 +148,8 @@ $small-up: $screen !default;
   }
 }
 
-// min-width 640px, medium screens
-@media only screen and (min-width: 40.063em) {
+// min-width 641px, medium screens - from Nexus7 to iPad 10
+@media only screen and (min-width: 40.0625em) {
   .dn-request-line:after {
     content:" from 641px ";
   }
@@ -160,6 +161,7 @@ $small-up: $screen !default;
 
   .app {
     top: 56px;
+    background: yellow;
   }
   .action-bar {
     height: 56px;
@@ -197,10 +199,13 @@ $small-up: $screen !default;
 
 }
 
-// min-width 1025px, large screens
+// min-width 1025px, large screens - from iPad 10 to Nexus10
 @media only screen and (min-width: 64.0625em) {
+  body {
+    font-size: 75%; // font-size 1em = 12px
+  }
   .app {
-    background: #000000;
+    background: red;
   }
   .dn-request-line:after {
     content:" min-width 1025px ";
@@ -221,9 +226,7 @@ $small-up: $screen !default;
 
 // min-width 1280px, large screens (10inch tablets)
 @media only screen and (min-width: 80em) {
-  body {
-    font-size: 75%; // font-size 1em = 12px
-  }
+
 }
 
 // min-width 1441px, xlarge screens

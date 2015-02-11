@@ -5554,7 +5554,7 @@ button.close {
 	display: none;
 }
 .ui-container.ui-box-group {
-	padding: 2px 2px 0 2px;
+	/*padding: 2px 2px 0 2px;*/
 	background: #676767;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -8055,7 +8055,7 @@ input:-moz-placeholder {
 .flight-details-airline-logo {
 	width: 32px;
 	height: 32px;
-	margin: 4px 8px 4px 4px;
+	margin: 4px 8px 4px 0;
 	display: block;
 }
 .flight-details-items {
@@ -8238,7 +8238,7 @@ input:-moz-placeholder {
 	bottom: 40px;
 	z-index: 2750;
 	background: #474747;
-	padding: 2px;
+	padding: 0 2px 2px;
 	border-left: 1px solid #696969;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;

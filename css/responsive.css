@@ -1,44 +1,75 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+/*===========================================*/
+/*==========  Global               ==========*/
+/*===========================================*/
 body {
   -webkit-text-size-adjust: 100%;
-  font-size: 62.5%; }
-
+  font-size: 62.5%;
+}
 .app {
-  background-color: #000000; }
-
+  background-color: #000000;
+}
 .dn-response-line .dn-line {
   font-size: 1.6em;
   font-weight: 300;
-  padding: 0 5px 0 10px; }
-
+  padding: 0 5px 0 10px;
+}
+.out {
+  bottom: 50px;
+}
 .action-bar {
   background: #e50000;
-  border-bottom: 4px solid #b70000; }
-
+}
 .action-bar-title {
   margin: 0;
   padding: 0;
   color: #ffffff;
-  height: 64px;
-  text-align: center; }
+  /* height: 50px; */
 
+  text-align: center;
+  top: 15px;
+  left: 56px;
+  position: absolute;
+}
 .sabre-logo {
-  margin: 0 auto;
-  padding: 0;
-  width: 104px;
-  height: 64px;
   display: block;
-  background: url(../images/ngv-sprite.png) no-repeat 0 0; }
-
+  text-indent: -9999px;
+  width: 85px;
+  height: 21px;
+  background: url(../images/sabre-logo.svg);
+  background-size: 85px 21px;
+}
+.hamburger-button {
+  background: transparent center center no-repeat;
+  background-size: 24px 24px;
+  border: 0;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 48px;
+  height: 48px;
+  top: 1px;
+  left: 4px;
+  z-index: 2;
+  position: fixed;
+  background-image: url(../images/hamburger-icon.svg);
+}
 .dn-response-line .dn-line-group {
-  border-bottom: 1px dashed #555; }
-
+  border-bottom: 1px dashed #555;
+}
 .dn-response-row .dn-line-group {
-  padding: 4px 0; }
-
-@media only screen {
-  .ap {
-    display: none; } }
+  padding: 4px 0;
+}
+.dn-response-line .dn-right-group-box {
+  min-width: 48px;
+}
+.dn-response-line .dn-line {
+  padding: 0 0 0 10px;
+}
+.dn-request-line:after,
+.dn-request-line:before {
+  content: "" !important;
+}
 /*
 .command-line>table td.mask-cell,
  .command-line>table td.mask-cell .mask {
@@ -51,74 +82,72 @@ body {
 }
 */
 .command-line {
-  background: #494949; }
-
+  background: #494949;
+}
 .ui-box-group-title {
-  font-size: 1.6em; }
-
+  font-size: 1.6em;
+}
 .ui-box-text-small {
   font-size: 1em;
-  color: #6c6c6c; }
-
+  color: #6c6c6c;
+}
 .ui-box-text-small-plus {
   font-size: 1.1em;
-  color: #6c6c6c; }
-
+  color: #6c6c6c;
+}
 .ui-box-text-mid {
   font-size: 1.3em;
-  color: #2c2c2c; }
-
+  color: #2c2c2c;
+}
 .ui-box-text-big {
   font-size: 1.6em;
-  color: #2c2c2c; }
-
+  color: #2c2c2c;
+}
 .ui-box-text-very-big {
   font-size: 2.2em;
-  color: #2c2c2c; }
-
+  color: #2c2c2c;
+}
 /*===========================================*/
 /*==========  Mobile First Method  ==========*/
 /*===========================================*/
 @media only screen and (max-width: 40em) {
   .dn-request-line:after {
-    content: " max-width 640px "; }
-
-  .sabre-logo {
-    margin: 0 auto;
-    padding: 0;
-    width: 78px;
-    height: 48px;
-    display: block;
-    background: url(../images/ngv-sprite.png) no-repeat -104px 0; }
-
+    content: " max-width 640px ";
+  }
   .app {
-    top: 48px; }
-
+    top: 50px;
+    /*background-color: #008000;*/
+  
+  }
   .action-bar {
-    height: 48px; }
-
+    height: 50px;
+  }
   .dn-response-line .dn-line {
-    font-size: 1.4em; }
-
-  .areaout {
-    right: 0 !important; }
-
-  .sidepanel--shown {
-    right: -400px; } }
-@media only screen and (min-width: 40.063em) {
+    font-size: 1.4em;
+  }
+  /*
+    .areaout {
+      right: 0 !important;
+    }
+    .sidepanel--shown {
+      right: -400px;
+    }
+  */
+}
+@media only screen and (min-width: 40.0625em) {
   .dn-request-line:after {
-    content: " from 641px "; }
-
+    content: " from 641px ";
+  }
   .dn-response-line .dn-line,
   .dn-request-line {
-    font-size: 1.6em; }
-
+    font-size: 1.6em;
+  }
   .app {
-    top: 56px; }
-
+    top: 50px;
+  }
   .action-bar {
-    height: 56px; }
-
+    height: 50px;
+  }
   .command-line > table td.trip-builder-cell input[type="button"],
   .area-indicator-cell .area-indicator,
   .command-line > table td.mask-cell input.command-line-input,
@@ -130,71 +159,85 @@ body {
     line-height: normal;
     height: 40px;
     max-height: 40px;
-    border: none; }
-
+    border: none;
+  }
   .area-indicator-cell .area-indicator {
-    line-height: 40px; }
-
+    line-height: 40px;
+  }
   .command-line > table td.mask-cell input.command-line-input {
-    font-size: 1.6em; } }
+    font-size: 1.6em;
+  }
+}
 @media only screen and (min-width: 46.0625em) {
   .dn-request-line:after {
-    content: " 737px "; } }
+    content: " 737px ";
+  }
+}
 @media only screen and (min-width: 64.0625em) {
-  .app {
-    background: #000000; }
-
-  .dn-request-line:after {
-    content: " min-width 1025px "; }
-
-  .app {
-    top: 64px; }
-
-  .action-bar {
-    background: #e50000;
-    height: 64px; }
-
-  .sidepanel--shown {
-    right: 0; } }
-@media only screen and (min-width: 80em) {
   body {
-    font-size: 75%; } }
+    font-size: 75%;
+  }
+  .dn-request-line:after {
+    content: " min-width 1025px ";
+  }
+  .sidepanel--shown {
+    right: 0;
+  }
+}
+@media only screen and (min-width: 80em) {
+  
+}
 @media only screen and (min-width: 90.0625em) {
   body {
-    font-size: 87.5%; }
-
+    font-size: 87.5%;
+  }
   .app {
-    background: #333333; }
-
+    background: #333333;
+  }
   .dn-request-line:after {
-    content: " min-width 1441px "; } }
+    content: " min-width 1441px ";
+  }
+}
 @media only screen and (min-width: 120.0625em) {
   .app {
-    background: #666666; }
-
+    background: #666666;
+  }
   .dn-request-line:after {
-    content: " min-width 1921px "; } }
+    content: " min-width 1921px ";
+  }
+}
 /*===========================================*/
 /*==========  Mobile Media query   ==========*/
 /*===========================================*/
 @media (-webkit-min-device-pixel-ratio: 1) {
   .dn-request-line:before {
-    content: " 160dpi "; } }
+    content: " 160dpi ";
+  }
+}
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 240dpi) {
   .dn-request-line:before {
-    content: " 240dpi "; } }
+    content: " 240dpi ";
+  }
+}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 320dpi) {
   .dn-request-line:before {
-    content: " 320dpi "; }
-
-  .sabre-logo {
-    /* Reference the @2x Sprite */
-    background-image: url(../images/ngv-sprite@2x.png);
-    /* Translate the @2x sprite's dimensions back to 1x */
-    background-size: 400px 400px; } }
+    content: " 320dpi ";
+  }
+}
 @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 480dpi) {
   .dn-request-line:before {
-    content: " 480dpi "; } }
+    content: " 480dpi ";
+  }
+}
 /*===========================================*/
 /*======  Disregard low and highest    ======*/
 /*===========================================*/
+@media (-webkit-min-device-pixel-ratio: 0.75), (min-resolution: 120dpi) {
+  
+}
+@media (-webkit-min-device-pixel-ratio: 1.33), (min-resolution: 213dpi) {
+  
+}
+@media (-webkit-min-device-pixel-ratio: 4), (min-resolution: 640dpi) {
+  
+}
